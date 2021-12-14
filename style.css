@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(80, 97, 47);
+}
+a {
+  text-decoration: none;
+  color: rgb(237, 237, 7);
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid rgb(237, 237, 7);
+  padding: 40px 80px;
+  transition: all 0.3s;
+}
+a:hover {
+  color: rgb(242, 81, 7);
+  border: 3px solid rgb(242, 81, 7);
+  animation: shake 0.3s linear 1;
+}
+@keyframes shake {
+  33% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
